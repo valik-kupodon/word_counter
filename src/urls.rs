@@ -17,7 +17,7 @@ pub async fn parse_text(body: web::Json<ParseTextRequest>) -> Result<String> {
     let text_type = get_text_type(body.text_type.as_str());
     if text_type.is_none() {
         let result = Err(JsonDecodeError {
-            name: "For text_type 'text', 'string', 'URL' available only",
+            name: "Validation error on field: text_type\nerror: For text_type 'text', 'string', 'URL' available only"
         });
         error!("{:?}", result);
         return result.map_err(|err| error::ErrorBadRequest(err.name));
