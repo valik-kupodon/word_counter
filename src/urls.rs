@@ -10,7 +10,7 @@ use actix_web::web::Json;
 
 #[get("/")]
 pub async fn index() -> Result<String> {
-    let body = format!("This is the index page");
+    let body = format!("Hello, welcome to the text parser services! Please use the following endpoints:\n\nGET /get_count_of_word/{{word}}\nPOST /parse_text");
     Ok(body)
 }
 
@@ -39,8 +39,7 @@ pub async fn parse_text(body: web::Json<ParseTextRequest>) -> Result<Json<HashMa
             let parser = StringParser::new(text.to_owned());
             let result = parser.get_words_count();
             info!("Result: {:?}", result);
-            let result = Ok(Json(result));
-            result
+            Ok(Json(result))
         }
         // "text" => {
         //     let file_path = body.text.as_str();
