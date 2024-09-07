@@ -1,0 +1,13 @@
+/home/valentine_filatov/repositories/word_counter/target/debug/deps/libzerocopy-c45bcf083e0b4596.rmeta: /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/lib.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/macros.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/macro_util.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/post_monomorphization_compile_fail_tests.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/util.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/third_party/rust/layout.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/wrappers.rs
+
+/home/valentine_filatov/repositories/word_counter/target/debug/deps/zerocopy-c45bcf083e0b4596.d: /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/lib.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/macros.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/macro_util.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/post_monomorphization_compile_fail_tests.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/util.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/third_party/rust/layout.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/wrappers.rs
+
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/lib.rs:
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/macros.rs:
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/macro_util.rs:
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/post_monomorphization_compile_fail_tests.rs:
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/util.rs:
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/third_party/rust/layout.rs:
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.7.31/src/wrappers.rs:
+
+# env-dep:CARGO_PKG_VERSION=0.7.31

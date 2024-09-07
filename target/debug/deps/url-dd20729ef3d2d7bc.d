@@ -1,0 +1,11 @@
+/home/valentine_filatov/repositories/word_counter/target/debug/deps/liburl-dd20729ef3d2d7bc.rmeta: /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/lib.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/host.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/origin.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/parser.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/path_segments.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/slicing.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/quirks.rs
+
+/home/valentine_filatov/repositories/word_counter/target/debug/deps/url-dd20729ef3d2d7bc.d: /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/lib.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/host.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/origin.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/parser.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/path_segments.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/slicing.rs /home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/quirks.rs
+
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/lib.rs:
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/host.rs:
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/origin.rs:
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/parser.rs:
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/path_segments.rs:
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/slicing.rs:
+/home/valentine_filatov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.0/src/quirks.rs:
