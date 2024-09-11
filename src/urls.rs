@@ -19,7 +19,7 @@ pub async fn index() -> Result<String> {
 
 #[post("/get_count_of_word")]
 pub async fn get_count_of_word(body: web::Json<WordCountRequest>, pool: web::Data<PgPool>) -> Result<Json<HashMap<String, usize>>> {
-    let words = body.words.clone();
+    let words = body.words.iter().map(|word| (word.to_lowercase().to_owned())).collect::<Vec<String>>();
     let word_counts = get_word_count(pool.clone(), &words).await;
     match word_counts {
         Ok(word_counts) => {

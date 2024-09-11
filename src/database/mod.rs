@@ -15,7 +15,7 @@ pub async fn create_word_count(pool: web::Data<PgPool>, word_count: Vec<WordCoun
                 INSERT INTO word_counter (word, count)
                 VALUES ($1, $2)
                 "#,
-                word_count.word,
+                word_count.word.to_lowercase(),
                 word_count.count,
             )
             .execute(pool.get_ref())
@@ -27,13 +27,15 @@ pub async fn create_word_count(pool: web::Data<PgPool>, word_count: Vec<WordCoun
 }
 
 pub async fn truncate_word_count(pool: web::Data<PgPool>) -> Result<(), sqlx::Error> {
+    let tranasation = pool.begin().await?;
     sqlx::query!(
         r#"
-        TRUNCATE TABLE word_count
+        TRUNCATE TABLE word_counter
         "#
     )
     .execute(pool.get_ref())
     .await?;
+    tranasation.commit().await?;
     Ok(())
 }
 
