@@ -7,10 +7,12 @@ edition = "2021"
 
 [dependencies]
 actix-web = "4"
+actix-multipart = "0.7.2"
 dotenv = "0.15.0"
-env_logger = "0.10.0"
+env_logger = "0.11.5"
 json = "0.12.4"
 log = "0.4.19"
 serde = "1.0.170"
 serde_derive = "1.0.170"
 sqlx = { version = "0.8.2", features = ["postgres", "runtime-tokio-native-tls"] }
+futures-util = "0.3.30"

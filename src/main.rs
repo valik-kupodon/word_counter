@@ -4,7 +4,7 @@ mod schemas;
 mod services;
 mod urls;
 
-use crate::urls::{get_count_of_word, parse_text, index};
+use crate::urls::{get_count_of_word, parse_text, index, parse_text_from_file};
 use sqlx::postgres::PgPoolOptions;
 use actix_web::middleware::Logger;
 use actix_web::{App, HttpServer, web};
@@ -35,6 +35,7 @@ async fn main() -> std::io::Result<()> {
             .service(get_count_of_word)
             .service(parse_text)
             .service(index)
+            .service(parse_text_from_file)
             .app_data(web::Data::new(pool.clone()))
     })
     .bind(format!("{server_host}:{server_port}"))?
