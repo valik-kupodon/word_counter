@@ -16,3 +16,5 @@ serde = "1.0.170"
 serde_derive = "1.0.170"
 sqlx = { version = "0.8.2", features = ["postgres", "runtime-tokio-native-tls"] }
 futures-util = "0.3.30"
+regex = "1.10.6"
+lazy_static = "1.5.0"

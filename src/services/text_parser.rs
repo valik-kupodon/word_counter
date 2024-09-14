@@ -2,6 +2,8 @@ pub mod text_parsers {
 
     use std::collections::HashMap;
     use log::{info, error};
+    use regex::Regex;
+    use lazy_static::lazy_static;
 
     pub struct StringParser {
         pub text: String,
@@ -13,15 +15,17 @@ pub mod text_parsers {
         }
 
         pub fn get_words_count(&self) -> HashMap<String, usize> {
-            let words_and_count = self.text.split_whitespace().fold(
-                std::collections::HashMap::new(),
-                |mut acc, word| {
-                    *acc.entry(word.to_owned()).or_insert(0) += 1;
-                    acc
-                },
-            );
-            words_and_count
-        }
+            lazy_static! {
+                static ref RE: Regex = Regex::new(r"(?i)\b[\w`]+(?:['-][\w`]+)*\b").unwrap();
+            }
+            RE.captures_iter(&self.text).fold(HashMap::new(), |mut word_count, caps| {
+                if let Some(word) = caps.get(0) {
+                    *word_count.entry(word.as_str().to_lowercase()).or_insert(0) += 1;
+                }
+                word_count
+            })
+    }
+
     }
 
     pub fn get_words_count_map_from_file(file: &[u8]) -> HashMap<String, usize> {

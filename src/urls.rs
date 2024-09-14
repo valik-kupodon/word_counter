@@ -4,7 +4,7 @@ use crate::database::{create_word_count, truncate_word_count, get_word_count};
 use crate::schemas::WordCount;
 use crate::schemas::{ParseTextRequest, WordCountRequest};
 use actix_web::rt::task;
-use actix_web::{error, get, post, web, Result};
+use actix_web::{error, get, post, web, HttpResponse, Responder, Result};
 use log::{error, info};
 use sqlx::PgPool;
 use crate::services::text_parser::text_parsers::{StringParser, get_words_count_map_from_file};
@@ -53,7 +53,7 @@ pub async fn parse_text(body: web::Json<ParseTextRequest>, pool: web::Data<PgPoo
 }
 
 #[post("/parse_text_from_file")]
-pub async fn parse_text_from_file(file: web::Bytes, pool: web::Data<PgPool>) -> Result<Json<HashMap<String, usize>>> {
+pub async fn parse_text_from_file(file: web::Bytes, pool: web::Data<PgPool>) -> impl Responder {
     let chunk_size = file.len() / 8;
     let futures = (0..8).map(|i| {
         let start = i * chunk_size;
@@ -95,5 +95,5 @@ pub async fn parse_text_from_file(file: web::Bytes, pool: web::Data<PgPool>) -> 
     info!("Start creating word count");
     let _ = create_word_count(pool.clone(), word_counts).await.or_else(|_| Err(error::ErrorInternalServerError("Error creating word count")));
 
-    Ok(Json(word_counter_map))
+    HttpResponse::Ok().content_type("text/plain").body("Saved words from file".to_string())
 }
